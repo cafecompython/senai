@@ -161,7 +161,102 @@ footer p {
   width: 80%;
 }
 
+/* ---------------- Tablet ---------------- */
 @media screen and (min-width: 768px) {
+  /* Header */
+  header {
+    padding: 10px 10px 0 10px;
+  }
+
+  header i {
+    font-size: 3rem;
+  }
+
+  header img {
+    height: 75px;
+    margin-right: calc(50% - (132px / 2));
+  }
+
+  header nav {
+    font-size: 1.5rem;
+    top: 80px;
+  }
+
+  /* Principal */
+  main {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  #sessao-principal {
+    padding-bottom: 40px;
+    border-width: 4px;
+  }
+
+  #sessao-principal figure img {
+    height: 415px;
+    margin-left: -50px;
+  }
+
+  #sessao-principal article h1 {
+    width: 100%;
+    margin-top: 40px;
+    font-size: 3.3rem;
+  }
+
+  #sessao-principal p {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+
+  #sessao-principal a {
+    padding: 20px 50px;
+    margin-top: 40px;
+    font-size: 1.2rem;
+  }
+
+  /* Produtos */
+
+  #produtos {
+    margin-top: 40px;
+  }
+  #produtos article h2 {
+    padding-right: 20px;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 20px;
+  }
+
+  #procutos article img {
+    width: 90px;
+    margin: 20px;
+  }
+
+  #produtos article p {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+
+  footer {
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+
+  footer img {
+    width: 44px;
+    margin-top: -20px;
+  }
+
+  footer p {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
   figure {
     display: flex;
     justify-self: left;
