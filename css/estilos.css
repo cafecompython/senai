@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
 /* Reset de propriedades */
 
 * {
@@ -10,6 +12,7 @@
 
 body {
   color: gray;
+  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -57,28 +60,74 @@ main {
   margin-left: -20px;
 }
 
+article {
+  font-size: 0.8rem;
+}
+
 #sessao-principal article h1 {
   color: orangered;
   margin-top: 15px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   width: 80%;
 }
 
 #sessao-principal p {
   margin-top: 15px;
-  font-size: 0.96rem;
   width: 90%;
 }
 
 #sessao-principal a {
   text-decoration: none;
   display: inline-block;
-  padding: 10px 10px;
+  padding: 10px;
   margin: 15px 0px;
   text-align: center;
   background-color: orangered;
   color: white;
   border-radius: 5px;
+}
+
+#produtos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  border: 1px solid gray;
+}
+
+#produtos article h2 {
+  background-color: orangered;
+  color: white;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+#produtos img {
+  float: left;
+  margin: 10px;
+}
+
+#produtos p {
+  padding: 10px;
+}
+
+footer {
+  background-color: black;
+  margin-top: 20px;
+  padding-left: 5px;
+}
+
+footer img {
+  width: 30px;
+  margin-top: -15px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  width: 80%;
 }
 
 @media screen and (min-width: 768px) {
