@@ -17,6 +17,7 @@ body {
 
 header {
   display: flex;
+  position: relative;
   justify-content: space-between;
   padding: 5px 5px 0 5px;
   background-color: black;
@@ -27,13 +28,45 @@ header i {
   color: white;
 }
 
+header label {
+  padding-top: 5px;
+}
+
 header img {
   margin-right: calc(50% - 44.15px);
   height: 50px;
 }
 
+#menu {
+  display: none;
+}
+
+header input:checked ~ nav {
+  display: flex;
+}
+
 header nav {
   display: none;
+  flex-direction: column;
+  position: absolute;
+  padding-bottom: 3px;
+  top: 55px;
+  left: 0px;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+}
+
+header a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width: 90%;
+}
+
+header a:hover {
+  background-color: orangered;
+  border-radius: 5px;
 }
 
 main {
@@ -148,5 +181,7 @@ footer p {
   }
   header nav a:hover {
     background-color: #eb5929;
+    padding: 8% 0px;
+    border-radius: 0 0 5px 5px;
   }
 }
