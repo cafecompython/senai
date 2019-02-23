@@ -1,0 +1,105 @@
+/* Reset de propriedades */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile First - CSS do mobile */
+
+body {
+  color: gray;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px 0 5px;
+  background-color: black;
+}
+
+header i {
+  font-size: 2rem; /*32px*/
+  color: white;
+}
+
+header img {
+  margin-right: calc(50% - 44.15px);
+  height: 50px;
+}
+
+header nav {
+  display: none;
+}
+
+main {
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#sessao-principal {
+  display: flex;
+  flex-direction: column;
+  /* padding: 0px 5px; */
+  border-bottom: 1.5px dotted grey;
+}
+
+#sessao-principal figure {
+  display: flex;
+  justify-content: center;
+  /* padding: 15px 0; */
+}
+
+#sessao-principal figure img {
+  height: 150px;
+  margin-left: -20px;
+}
+
+#sessao-principal article h1 {
+  color: orangered;
+  margin-top: 15px;
+  font-size: 1.6rem;
+  width: 80%;
+}
+
+#sessao-principal p {
+  margin-top: 15px;
+  font-size: 0.96rem;
+  width: 90%;
+}
+
+#sessao-principal a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 10px;
+  margin: 15px 0px;
+  text-align: center;
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  figure {
+    display: flex;
+    justify-self: left;
+  }
+  header i {
+    display: none !important;
+    /* font-size: 2rem;
+    color: white; */
+  }
+  header nav {
+    display: inline;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: white;
+  }
+  header nav a:hover {
+    background-color: #eb5929;
+  }
+}
